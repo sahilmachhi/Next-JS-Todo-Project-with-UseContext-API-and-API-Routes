@@ -29,7 +29,7 @@ const Todo = ({ todo }: { todo: TodoType }) => {
             </div>
 
             <Link prefetch={true} href={`/edit-todo/${_id}`} className="cursor-pointer w-full md:w-auto">
-                <Button className="cursor-pointer">Edit</Button>
+                <Button className="cursor-pointer w-full">Edit</Button>
             </Link>
             <DeleteTodo id={_id} />
 
