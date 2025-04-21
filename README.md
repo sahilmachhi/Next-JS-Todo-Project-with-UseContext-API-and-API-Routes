@@ -72,6 +72,6 @@ DELETE /api/todos/:id: Deletes a todo.
 ### 6. Deployment
 I deployed this app on Netlify here's live [Link](https://todo-app-using-usecontext-api.netlify.app/)
 
-7. Testing
+### 7. Testing
 You can test the application by navigating to http://localhost:3000 and interacting with the interface to add, update, toggle, and delete todos.
 
