@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div className='border-b shadow-md top-0 sticky z-50 bg-white'>
             <div className='container mx-auto w-full flex items-center justify-between py-4 px-4'>
-                <Link prefetch={true} href='/'>
+                <Link href='/'>
                     <span className='text-2xl font-bold'>Todo App</span>
                 </Link>
                 <div>

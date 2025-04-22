@@ -5,7 +5,7 @@ import { Button } from './ui/button'
 const AddTodoButton = () => {
     return (
         <>
-            <Link prefetch={true} href="/add-todo">
+            <Link href="/add-todo">
                 <Button className="cursor-pointer">add Todo</Button>
             </Link>
         </>

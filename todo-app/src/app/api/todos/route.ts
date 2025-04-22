@@ -11,8 +11,13 @@ export async function GET() {
         if (!todos) {
             return NextResponse.json({ error: "No todos found" }, { status: 404 });
         }
+        const res = NextResponse.json({ todos });
 
-        return NextResponse.json({ todos });
+        res.headers.set('Cache-Control', 'no-store, max-age=0, must-revalidate');
+        res.headers.set('Pragma', 'no-cache');
+        res.headers.set('Expires', '0');
+
+        return res
     } catch (error) {
         console.error("Error fetching todos:", error);
         return NextResponse.json({ error: "Error fetching todos" }, { status: 500 });

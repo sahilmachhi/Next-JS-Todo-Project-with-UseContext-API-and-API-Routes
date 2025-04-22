@@ -28,7 +28,7 @@ const Todo = ({ todo }: { todo: TodoType }) => {
                 <Switch checked={isCompleted} className='cursor-pointer' onCheckedChange={handleSwitchChange} />
             </div>
 
-            <Link prefetch={true} href={`/edit-todo/${_id}`} className="cursor-pointer w-full md:w-auto">
+            <Link href={`/edit-todo/${_id}`} className="cursor-pointer w-full md:w-auto">
                 <Button className="cursor-pointer w-full">Edit</Button>
             </Link>
             <DeleteTodo id={_id} />
